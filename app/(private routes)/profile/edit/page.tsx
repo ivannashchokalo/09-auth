@@ -19,7 +19,6 @@ export default function Edit() {
     try {
       const updatedUser = await updateMe({
         username,
-        email: user.email,
       });
 
       setUser(updatedUser);
