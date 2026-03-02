@@ -4,8 +4,8 @@ import css from "./NoteForm.module.css";
 import { useId } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { FormValues, NoteTag } from "@/types/note";
-import { createNote } from "@/lib/api";
 import { useNoteStore } from "@/lib/store/noteStore";
+import { createNote } from "@/lib/api/clientApi";
 
 export default function NoteForm() {
   const fieldId = useId();
@@ -32,7 +32,6 @@ export default function NoteForm() {
 
     createMutation.mutate(note);
   };
-
   return (
     <form className={css.form} action={handleFormSubmit}>
       <div className={css.formGroup}>
