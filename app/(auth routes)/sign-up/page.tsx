@@ -3,9 +3,9 @@
 import { getMe, register, UserRegisterData } from "@/lib/api/clientApi";
 import css from "./SignUpPage.module.css";
 import { useState } from "react";
-import { ApiError } from "next/dist/server/api-utils";
 import { useRouter } from "next/navigation";
 import { useAuthStore } from "@/lib/store/authStore";
+import { ApiError } from "@/app/api/api";
 
 export default function SignUp() {
   const router = useRouter();
