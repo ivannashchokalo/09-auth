@@ -20,11 +20,10 @@ export interface UserRegisterData {
 }
 
 interface CheckSessionReq {
-  succes: boolean;
+  success: boolean;
 }
 
 interface UpdateUserData {
-  email: string;
   username: string;
 }
 

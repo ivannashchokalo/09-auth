@@ -5,7 +5,7 @@ import css from "./SignUpPage.module.css";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuthStore } from "@/lib/store/authStore";
-import { ApiError } from "@/app/api/api";
+import { ApiError } from "@/lib/api/api";
 
 export default function SignUp() {
   const router = useRouter();

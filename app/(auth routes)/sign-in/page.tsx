@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { getMe, login, UserRegisterData } from "@/lib/api/clientApi";
 import { useAuthStore } from "@/lib/store/authStore";
-import { ApiError } from "@/app/api/api";
+import { ApiError } from "@/lib/api/api";
 
 export default function SignIn() {
   const router = useRouter();
